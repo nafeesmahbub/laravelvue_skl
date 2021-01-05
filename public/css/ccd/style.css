@@ -1,0 +1,126 @@
+#tags {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#questions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#questions li {
+    /* border: 1px solid #ddd; */
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+}
+
+#questions li:hover:not(.header) {
+    background-color: #eee;
+}
+
+.answerBtn {
+    cursor: pointer;
+    color: white;
+    background-color: #5cb85c;
+    float: right;
+    max-width: 75px;
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    text-align: right;
+    padding: 1px 5px;
+}
+
+.media {
+    margin-top: 15px;
+}
+
+.media-body {
+    width: 10000px;
+}
+
+.media,
+.media-body {
+    overflow: hidden;
+    zoom: 1;
+    text-align: justify;
+    padding: 5px;
+}
+
+h4.media-heading {
+    position: relative;
+}
+
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+h4.media-heading span {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+
+.questions-scrollbar {
+    height: 750px;
+}        
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto;}
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden;}
+.autocomplete-selected { background: #143D14; }
+.autocomplete-selected{
+    background-color: #f5f5f5;
+}
+.autocomplete-suggestions strong {     color: #000000 !important; font-weight: bold; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+.loadinggif {
+    background:url(<?php echo $baseUrl.'/public/js/ccd/autocomplete/ajax-loader.gif';?>) no-repeat right center;
+}
+input[type=text].loadinggif:focus{
+    background:url(<?php echo $baseUrl.'/public/js/ccd/autocomplete/ajax-loader.gif';?>) no-repeat right center;
+}
+.search_box{
+    width: 100%;
+    padding: 5px;
+    height: 35px;
+}
+.card-header{
+    padding: 0px;
+}
+.btn-link{
+    text-decoration: none !important;
+}
+.card-text .card-title {
+    text-align: justify;
+}
+.fade {
+    opacity: 1 !important;
+}
+.btn-link{
+    text-decoration: none;
+}
+.btn-link:focus {
+    outline: 0 !important;
+}
+.accordion .card-header button:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right;
+}
+.accordion .card-header button.collapsed:after {
+    content: "\f067";
+    float: right;
+}
